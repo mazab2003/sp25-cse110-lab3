@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Timer First Brainstorm Meeting Minutes</title>
+    <link rel="shortcut icon" href="https://cse110-sp25.github.io/mazab2003/Lab2_Starter/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <header>
+        <h1>Pomodoro Timer First Brainstorm</h1>
+        <p><strong>Meeting Type:</strong> <em>Brainstorming</em></p>
+        <hr>
+        <div>
+            <span>Meeting ID:</span> CSE110_0000
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#date">Date & Time</a></li>
+            <li><a href="#attendance">Attendance</a></li>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#unfinished">Unfinished Business</a></li>
+            <li><a href="#new">New Business</a></li>
+            <li><a href="#misc">Miscellaneous</a></li>
+            <li><a href="#diagrams">Diagrams</a></li>
+            <li><a href="#recordings">Recordings</a></li>
+            <li><a href="#feedback">Feedback Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="date">
+            <h2>Date & Time</h2>
+            <p>April 16, 2025<br>00:00 AM - 00:30 AM PST</p>
+        </section>
+
+        <section id="attendance">
+            <h2>Attendance</h2>
+            <h3>Present</h3>
+            <ul>
+                <li><b>Mohammed Azab</b> - CSE110 Student</li>
+                <li><b>Prof Powell</b> - CSE110 Professor</li>
+            </ul>            
+        </section>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Brainstorm ideas on how to implement the Pomodoro Timer</li>
+            </ol>
+        </section>
+
+        <section id="unfinished">
+            <h2>Unfinished Business</h2>
+            <p>Items carried over from the previous meeting:</p>
+            <ul>
+                <li>UI/UX Design - <strong>In Progress</strong> (Mohammed)</li>
+            </ul>
+        </section>
+
+        <section id="new">
+            <h2>New Business</h2>
+            
+            <h3>Add new features</h3>
+            <p>The team discussed adding the following features:</p>
+            <ul>
+                <li>Synchronize with all devices</li>
+            </ul>            
+        </section>
+
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <details>
+                <summary>New Proposal</summary>
+                <p>Proposal to change the project..</p>
+            </details>            
+        </section>
+
+        <section id="diagrams">
+            <h2>Diagrams & Visuals</h2>
+            <h3>Super cute cat!</h3>
+            <img src="/api/placeholder/800/400" alt="Super cute cat">            
+        </section>
+
+        <section id="recordings">
+            <h2>Meeting Recordings</h2>
+            
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="meeting-audio.mp3" type="audio/mpeg">
+            </audio>
+            
+            <h3>Video Recording</h3>
+            <video width="640" height="360" controls>
+                <source src="meeting-video.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section id="feedback">
+            <h2>Meeting Feedback Form</h2>
+            <form>
+                <fieldset>
+                    <legend>Please provide your feedback on today's meeting</legend>
+                    
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </p>
+                    
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                    </p>
+                    
+                    <p>
+                        <label for="meeting-date">Meeting Date:</label>
+                        <input type="date" id="meeting-date" name="meeting-date" value="2025-04-16">
+                    </p>
+                    
+                    <p>
+                        <label for="feedback-text">Your Feedback:</label><br>
+                        <textarea id="feedback-text" name="feedback-text" rows="4" cols="50" placeholder="Please share your thoughts on the meeting..."></textarea>
+                    </p>
+                    
+                    <p>Meeting Effectiveness:</p>
+                    <input type="radio" id="effective-yes" name="effective" value="yes">
+                    <label for="effective-yes">Very Effective</label><br>
+                    <input type="radio" id="effective-somewhat" name="effective" value="somewhat">
+                    <label for="effective-somewhat">Somewhat Effective</label><br>
+                    <input type="radio" id="effective-no" name="effective" value="no">
+                    <label for="effective-no">Not Effective</label>
+                    
+                    <p>What aspects of the meeting worked well? (Check all that apply)</p>
+                    <input type="checkbox" id="timeManagement" name="aspect" value="timeManagement">
+                    <label for="timeManagement">Time Management</label><br>
+                    <input type="checkbox" id="participation" name="aspect" value="participation">
+                    <label for="participation">Team Participation</label><br>
+                    <input type="checkbox" id="decisions" name="aspect" value="decisions">
+                    <label for="decisions">Decision Making</label><br>
+                    <input type="checkbox" id="organization" name="aspect" value="organization">
+                    <label for="organization">Organization</label>
+                    
+                    <p>
+                        <label for="meeting-type">Type of Meeting:</label>
+                        <select id="meeting-type" name="meeting-type">
+                            <option value="brain">Brainstorming</option>
+                        </select>
+                    </p>
+                    
+                    <p>
+                        <label for="topic-suggestions">Suggested Topics for Next Meeting:</label>
+                        <input list="topics" id="topic-suggestions" name="topic-suggestions">
+                        <datalist id="topics">
+                            <option value="Project Timeline">
+                        </datalist>
+                    </p>
+                    
+                    <button type="submit">Submit Feedback</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2025 Mohammed Azab Lab 2 | Last updated: April 16, 2025</p>
+        <p><a href="mailto:mazab@ucsd.edu">Contact Team</a></p>
+    </footer>
+</body>
+</html>

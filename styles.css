@@ -265,3 +265,88 @@ section {
     font-size: 1.5rem;
   }
 }
+
+/* ============== SELECTORS ================ */
+
+/* Class Selector */
+.attendee {
+  background-color: #f0f8ff;
+}
+
+/* ID Selector */
+#date {
+  border-left: 4px solid var(--main-color);
+  padding-left: 10px;
+}
+
+/* Universal Selector */
+* {
+  font-smooth: always;
+}
+
+/* Element Selector */
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Attribute Selector */
+section[id="agenda"] {
+  background-color: #e8f5e9;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+/* Pseudo-class Selector */
+.card:hover {
+  background-color: #fff0c4;
+}
+
+/* Selector List */
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
+/* Descendant Combinator */
+main section {
+  margin-bottom: 2rem;
+}
+
+/* Child Combinator */
+.attendees-container > .attendee {
+  border: 2px dashed #ccc;
+}
+
+/* General sibling combinator */
+h3 ~ p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Adjacent sibling combinator */
+h2 + p {
+  font-style: italic;
+  color: #555;
+}
+
+/* Combining Two Selectors */
+div.info-item {
+  padding: 10px;
+  border: 1px solid #bbb;
+  background-color: #fdfdfd;
+}
+
+/* New selector: :has() */
+section:has(.discussion-item) {
+  outline: 2px dashed orange;
+  padding: 1em;
+}
+
+/* Nested Selectors (requires SCSS-style nesting or simulates it manually) */
+.container {
+  background-color: #fcfcfc;
+}
+.container .child {
+  padding: 1em;
+  background-color: #eee;
+}

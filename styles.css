@@ -1,0 +1,152 @@
+
+/* ========== CSS Variables ========== */
+:root {
+    --main-color: hsl(210, 100%, 40%);
+    --text-color: #333;
+    --fallback-color: color(display-p3 0.2 0.5 0.7);
+    --accent-color: color-mix(in srgb, red 60%, yellow);
+  }
+  
+  /* ========== Universal Selector ========== */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* ========== Base Styles ========== */
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color, black);
+    background-color: #f4f4f4;
+    padding: 1em;
+  }
+  
+  /* ========== Header ========== */
+  header {
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  /* ========== Meeting Info Section ========== */
+  #meeting-info {
+    background-color: rgb(240, 248, 255);
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  /* ========== Attendees & Goals ========== */
+  .attendees-container {
+    display: flex;
+    gap: 1em;
+    background-color: #ffefd5;
+    padding: 1em;
+    border: 1pt solid #aaa;
+  }
+  
+  .attendee {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    background-color: #ffe;
+  }
+  
+  /* ========== Topics Section ========== */
+  .topics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    background-color: hsl(50, 100%, 90%);
+    padding: 1em;
+  }
+  
+  .discussion-item {
+    border: 1px solid #888;
+    padding: 1em;
+    background-color: #fefbd8;
+  }
+  
+  /* ========== Action Items ========== */
+  .card {
+    background-color: #fff8dc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+  }
+  
+  .card:hover {
+    background-color: #fffae6;
+  }
+  
+  .card:active {
+    transform: scale(0.98);
+  }
+  
+  /* ========== Typography ========== */
+  h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--main-color);
+    text-align: center;
+  }
+  
+  h3 ~ p {
+    font-style: italic;
+  }
+  
+  h2 + p {
+    font-weight: bold;
+  }
+  
+  /* ========== Sizing and Position ========== */
+  .topics, .actions {
+    min-width: 300px;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Sticky test */
+  header {
+    position: sticky;
+    top: 0;
+  }
+  
+  /* ========== Media Queries ========== */
+  @media screen and (max-width: 768px) {
+    .attendees-container {
+      flex-direction: column;
+    }
+  
+    .topics {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* ========== Attribute Selector ========== */
+  section[id="attendees"] {
+    background-color: rgba(240, 240, 240, 0.5);
+  }
+  
+  /* ========== Combined Selector ========== */
+  div.info-item {
+    padding: 10px;
+    border: 1px dotted gray;
+  }
+  
+  /* ========== New Selectors ========== */
+  section:has(.discussion-item) {
+    border: 3px dashed darkgreen;
+  }
+  
+  /* ========== Nested Selectors ========== */
+  .container {
+    padding: 2em;
+  }
+  .container .child {
+    padding: 1em;
+  }
+  

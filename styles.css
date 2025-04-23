@@ -194,3 +194,20 @@ section {
 .card, .attendee {
   border-radius: 8px;
 }
+
+/* ============= FLEXBOX LAYOUT ============ */
+
+.attendees-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.attendee {
+  flex: 1 1 30%;
+  background-color: #fff;
+  text-align: center;
+}

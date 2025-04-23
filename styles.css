@@ -211,3 +211,20 @@ section {
   background-color: #fff;
   text-align: center;
 }
+
+/* ============== GRID LAYOUT ============== */
+
+.topics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  padding: 1em;
+  background-color: hsl(45, 100%, 93%);
+}
+
+.discussion-item {
+  background-color: #fff3cd;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
